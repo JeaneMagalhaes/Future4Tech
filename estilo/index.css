@@ -1,0 +1,49 @@
+main{
+    max-width: 980px;
+    min-height: 34vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logotipoGrande{
+    width: 400px;
+}
+main img{
+    width: 500px;
+}
+.disparadorImagens{
+    background-color: #B1D4E0;
+    border-top-left-radius:50px ;
+}
+.disparadorImagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px -5px #000000;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+main img{
+    padding: 15px 15px 0 15px;
+    margin: 15px;
+}
+.disparadorImagens a{
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin: 10px 10px 20px 10px;
+    border-radius: 15px;
+    background-color: rgb(25, 149, 251);
+    box-shadow: 5px 5px 15px -5px #000000;
+    transition: 1s ease;
+}
+.disparadorImagens a:hover{
+    background-color: #FFD230;
+}

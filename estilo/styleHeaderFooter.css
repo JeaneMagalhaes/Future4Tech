@@ -1,0 +1,88 @@
+/*Trazendo fontes novas com o Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+/* Reset dos Elementos*/
+
+/*Codigo das Cores*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(180deg,gray,white);
+}
+header{
+    width: 100%;
+    background-color: black;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px -5px #000000;
+    
+}
+footer{
+    width: 100%;
+    background-color: #9A9DA1;
+    color: #cdcdcd;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 5px #000000;
+}
+.conteudo{
+    width: 980px;
+    margin: 0 auto;
+}
+main{
+    max-width: 980px;
+}
+header .conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li{
+    padding: 10px;
+    margin: 5px;
+}
+nav a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #B7B6B6;
+    font-weight: 300;
+    transition: 1s ease;
+}
+nav a:hover{
+    color: gold;
+}
+
+footer .logotipoPequeno{
+    height: 70px;
+    padding: 5px;
+}
+footer a img{
+    height: 35px;
+    padding: 5px;
+}
+#redeSocial{
+    padding: 20px;
+}
+
+
