@@ -4,3 +4,18 @@ header{
     width: 100%;
     background-color: black;
 }
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+}
+a{
+    font-family:Poppins,Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(218, 217, 217);
+}
