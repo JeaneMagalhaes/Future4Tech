@@ -1,11 +1,42 @@
 @import "headerFooter.css"; 
 main{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.principal{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 720px;
+    min-height: 850px;
 }
+.saibaMaisInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 750px;
+    padding: 10px;
+    margin: 10px;
+    border-top-left-radius: 60px;
+    background-color: rgb(154, 213, 229);
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 15px -4px black;
+    
+}
+.saibaMaisInfo img{
+    height: 400px;
+    margin: 20px auto;
+}
+.saibaMaisInfo h1{
+    margin: 0 auto;
+}
+.saibaMaisInfo p{
+    margin: 5px;
+}
+
 .apresentacao{
     display: flex;
     flex-direction: column;
@@ -93,3 +124,15 @@ main{
     color: black;
     background-color: gold;
  }
+.informacoes{
+    margin: 0 auto;
+    width: 70%;
+}
+.saibaMaisInfo a{
+    text-decoration: none;
+    color: rgb(247, 11, 11);
+    transition: 1s ease;
+}
+.saibaMaisInfo a:hover{
+    color: yellow;
+}
