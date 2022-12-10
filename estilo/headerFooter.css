@@ -3,4 +3,36 @@
 header{
     width: 100%;
     background-color: black;
+    box-shadow: 5px 5px 15px -4px black;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(195, 194, 194);
+    transition: 1s ease;
+}
+a:hover{
+    color: gold;
+}
+footer{
+    width: 100%;
+    color: rgb(173, 171, 171);
+    background-color: gray;
+    box-shadow: 5px -5px 15px -4px black
+}
+.logotipoPequeno{
+    height: 80px;
+    margin: 10px;
+}
+footer img{
+    height: 40px;
 }
