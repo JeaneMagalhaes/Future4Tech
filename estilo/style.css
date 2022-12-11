@@ -1,20 +1,57 @@
+@import url(../estilo/portfolio.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family:Poppins,Arial, Helvetica, sans-serif;
+:root{
+    --preto-principal: #020301;
+    --azul-principal: #b1d4e0;
+    --amarelo-hover: #ffd230;
+    --cinza-principal: #9a9da1;
+    --cinza-letra-cabecalho: #b7b6b6;
+    --branco-letras: #FFFFFF;
+
 }
 body{
-    background-image: linear-gradient(180deg,gray,white);
+    background-image: linear-gradient(180deg,#9a9da1,#ffffff);
 }
-.conteudo,main{
-    width: 980px;
-    margin: 0 auto;
-}
-.conteudo{
+
+.cabecalho{
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
+    background-color: var(--preto-principal);
+}
+
+.botaoNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botaoLink{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cinza-letra-cabecalho);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botaoLink:hover{
+    color: var(--amarelo-hover);
+}
+
+.rodape{
+    background-color: var(--cinza-principal);
+    margin-top: 5em;
+    padding-top: 1em;
+    border-top: 1px solid var(--preto-principal);
+}
+.imgRodape{
+    width: 50px;
+}
+
+.logotipoPequeno{
+    width: 100px;
+}
+
+.copyright{
+    font-weight: bold;
 }
