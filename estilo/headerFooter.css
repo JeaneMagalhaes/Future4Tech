@@ -12,8 +12,8 @@ header ul{
     align-items: center;
 }
 header li{
-    padding: 10px;
-    margin: 10px;
+    list-style: none;
+    padding: 20px;
 }
 a{
     text-decoration: none;
