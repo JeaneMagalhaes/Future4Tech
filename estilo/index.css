@@ -1,10 +1,40 @@
 @import "headerFooter.css"; 
 main{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.principal{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 720px;
+    min-height: 850px;
+}
+.saibaMaisInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 750px;
+    padding: 10px;
+    margin: 10px;
+    border-top-left-radius: 60px;
+    background-color: rgb(154, 213, 229);
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 15px -4px black;
+    
+}
+.saibaMaisInfo img{
+    height: 400px;
+    margin: 20px auto;
+}
+.saibaMaisInfo h1{
+    margin: 0 auto;
+}
+.saibaMaisInfo p{
+    margin: 5px;
 }
 .apresentacao{
     display: flex;
@@ -27,10 +57,61 @@ main{
     background-color: rgb(154, 213, 229);
     box-shadow: 5px 5px 15px -4px black;
 }
-.disparadorImagens img{
+.carrossel{
     width: 350px;
+    height: 336px;
+   overflow: hidden;
     margin: 30px;
 }
+.carrossel img{
+    width: 350px;
+    height: 336px;
+    padding: 0;
+    margin: 0;
+}
+.disparadorImagens{
+    width: 400px;
+    margin: 30px;
+}
+
+.disparadorImagens ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.disparadorImagens li{
+    position: relative;
+    animation: animacaoImagens 60s infinite ease-out;
+}
+/*5% = na imagem, 2.5% Troca de imagem*/
+@keyframes animacaoImagens{
+    0%{ left: 0px;}
+    5%{ left: 0px;}
+    7.5%{ left: -350px;}
+    12.5%{ left: -350px;}
+    15%{ left: -700px;}
+    20%{ left: -700px;}
+    22.5%{ left: -1050px;}
+    27.5%{ left: -1050px;}
+    30%{left: -1400px;}
+    35%{left: -1400px;}
+    37.5%{left: -1750px;}
+    42.5%{left: -1750px;}
+    47.5%{left: -1750px}
+    52.5%{left: -1750px;}
+    55%{left:-1400px;}
+    60%{left:-1400px;}
+    62.5%{left:-1050px;}
+    67.5%{left:-1050px}
+    70%{left:-700px}
+    75%{left: -700px;}
+    77.5%{left: -350px;}
+    82.5%{left:-350px;}
+    85%{left:0px}
+    100%{left:0px}
+
+}
+
 .disparadorImagens a{
    padding: 10px 30px;
    margin-bottom: 50px;
@@ -42,3 +123,16 @@ main{
     color: black;
     background-color: gold;
  }
+.informacoes{
+    margin: 0 auto;
+    width: 70%;
+}
+.saibaMaisInfo a{
+    text-decoration: none;
+    color: rgb(247, 11, 11);
+    transition: 1s ease;
+}
+.saibaMaisInfo a:hover{
+    color: yellow;
+}
+

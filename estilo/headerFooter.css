@@ -5,19 +5,25 @@ header{
     background-color: black;
     box-shadow: 5px 5px 15px -4px black;
 }
-ul{
+
+header ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-li{
-    padding: 10px;
-    margin: 10px;
+
+header li{
+    list-style: none;
+    padding: 20px; 
 }
 a{
     text-decoration: none;
     color: rgb(195, 194, 194);
+
+}
+a:hover{
+    color: gold;
     transition: 1s ease;
 }
 a:hover{
@@ -36,3 +42,9 @@ footer{
 footer img{
     height: 40px;
 }
+
+.redeSocial img{
+    margin: 5px;
+    padding: 5px;
+}
+
