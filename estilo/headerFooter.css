@@ -18,10 +18,10 @@ header li{
 a{
     text-decoration: none;
     color: rgb(195, 194, 194);
-    transition: 1s ease;
 }
 a:hover{
     color: gold;
+    transition: 1s ease;
 }
 footer{
     width: 100%;
