@@ -26,9 +26,7 @@ a:hover{
     color: gold;
     transition: 1s ease;
 }
-a:hover{
-    color: gold;
-}
+
 footer{
     width: 100%;
     color: rgb(173, 171, 171);

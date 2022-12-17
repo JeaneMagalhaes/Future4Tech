@@ -1,57 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilo/headerFooter.css" />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <div class="conteudo">
-        <img
-          src="../imagens/headerFooter/logo.png" alt="Logo da empresa" class="logotipoMedio" />
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./solucoes.html">Soluções</a></li>
-            <li><a href="./portifolio.html">Portifólio</a></li>
-            <li><a href="./quemSomos.html">Quem Somos</a></li>
-            <li><a href="./faleConosco.html">Fale Conosco</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="conteudoPrincipal">
-        <section>
-          <h1>Portfólio</h1>
-          <div>
-              <img src="../imagens/conteudos/portifolio/img_site_petshop.jpeg"  alt="imagem do site  pet shop">
-              <p>Petshop</p>
-              <a href="../imagens/conteudos/portifolio/img_site_petshop_com_app.jpeg" target="_blank">Saiba Mais</a>
-          </div>
-         
-          <div>
-              <img src="../imagens/conteudos/portifolio/img_site_restaurante.jpeg"  alt="site Restaurante da Dona Florinda">
-              <p>App Restaurante da Dona Florinda</p>
-              <a href="../imagens/conteudos/portifolio/img_site_restaurante_com_app.jpeg" target="_blank"> Saiba Mais</a>
-          </div>
-      </section>
-      </div>
-    </main>
-    <footer>
-      <div class="conteudo">
-        <img src="../imagens/headerFooter/logoRodape.png" alt="Logo de tecnologia em nuvens" class="logotipoPequeno" />
-        <h4>@ Future 4 Tech</h4>
-        <div class="redeSocial">
+<html lang="pt-br">
 
-          <a href=""><img src="../imagens/headerFooter/linkedin.png" alt="linkedin" /></a>
-          <a href=""><img src="../imagens/headerFooter/whatsup.png" alt="Whats up" /></a>
-          <a href=""><img src="../imagens/headerFooter/instangran.png" alt="Instangran" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../estilo/headerFooter.css">
+  <link rel="stylesheet" href="../estilo/portfolio.css">
+  <link rel="stylesheet" href="../estilo/estilo.css">
+  <title>Portfólio</title>
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <img src="../imagens/headerFooter/logo.png" alt="Logo da empresa" class="logotipoMedio" />
+      <nav>
+        <ul class="botaoNav">
+          <li><a href="../index.html" class="botaoLink">Inicio</a></li>
+          <li><a href="./solucoes.html" class="botaoLink">Soluções</a></li>
+          <li><a href="./portifolio.html" class="botaoLink">Portifólio</a></li>
+          <li><a href="./quemSomos.html" class="botaoLink">Quem Somos</a></li>
+          <li><a href="./faleConosco.html" class="botaoLink">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section>
+      <div>
+        <h1 class="tituloPrinc">Portfólio</h1>
+      </div>
+      <div class="container">
+
+        <div class="caixa sep">
+          <img src="../imagens/conteudos/portifolio/img_site_petshop.jpeg" alt="imagem do site  pet shop"
+            class="imgCont">
+          <p class="fraseCont">Petshop</p>
+          <a class="ancoraPrinc" href="../imagens/conteudos/portifolio/img_site_petshop_com_app.jpeg"
+            target="_blank">Saiba Mais</a>
+        </div>
+
+        <div class="caixa ">
+          <img src="../imagens/conteudos/portifolio/img_site_restaurante.jpeg" alt="site Restaurante da Dona Florinda"
+            class="imgCont">
+          <p class="fraseCont"> Restaurante Dona Florinda</p>
+          <a class="ancoraPrinc" href="../imagens/conteudos/portifolio/img_site_restaurante_com_app.jpeg"
+            target="_blank"> Saiba Mais</a>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <img src="../imagens/headerFooter/logoRodape.png" alt="Logo de tecnologia em nuvens" class="logotipoPequeno" />
+      <div>
+        <p class="copyright">&copy; Future 4 Tech</p>
+      </div>
+      <div class="redeSocial">
+        <a href=""><img src="../imagens/headerFooter/linkedin.png" alt="linkedin" class="imgRodape" /></a>
+        <a href=""><img src="../imagens/headerFooter/whatsup.png" alt="Whats up" class="imgRodape" /></a>
+        <a href=""><img src="../imagens/headerFooter/instangran.png" alt="Instangran" class="imgRodape" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
