@@ -2,8 +2,8 @@
 
 header{
     width: 100%;
-    background-color: black;
-    box-shadow: 5px 5px 15px -4px black;
+    background-color: var(--pretoPrincipal);
+    box-shadow: 5px 5px 15px -4px var(--pretoPrincipal);
 }
 
 header ul{
@@ -19,21 +19,18 @@ header li{
 }
 a{
     text-decoration: none;
-    color: rgb(195, 194, 194);
+    color: var(--cinzaLetra);
 
 }
 a:hover{
-    color: gold;
+    color: var(--amareloHouver);
     transition: 1s ease;
-}
-a:hover{
-    color: gold;
 }
 footer{
     width: 100%;
-    color: rgb(173, 171, 171);
-    background-color: gray;
-    box-shadow: 5px -5px 15px -4px black
+    color: var(--cinzaLetra);
+    background-color: var(--cinzaPrincipal);
+    box-shadow: 5px -5px 15px -4px var(--pretoPrincipal);
 }
 .logotipoPequeno{
     height: 80px;

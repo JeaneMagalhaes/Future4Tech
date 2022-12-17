@@ -29,7 +29,7 @@ main h2{
 }
 #separacao{
     height: 6px;
-    background-color: rgb(193, 191, 191);
+    background-color:var(--cinzaSeparacao);
 }
 .caixaTexto{
     display: flex;
@@ -57,16 +57,16 @@ main h2{
     width: 100%;
     border-radius: 10px;
     border: none;
-    background-color: rgb(226, 225, 225);
+    background-color: var(--cinzaFormulario);
 }
 .caixaTexto input, .caixaTexto select,.caixaTexto textarea,.caixaButton input{
     width: 100%;
     border-radius: 10px;
     border: none;
-    background-color: rgb(226, 225, 225);
+    background-color: var(--cinzaFormulario);
 }
 .caixaTexto input:focus-visible, .caixaTexto select:focus-visible,.caixaTexto textarea:focus-visible{
-    background-color: rgb(255, 254, 254);
+    background-color: var(--brancoLetras);
 }
 .caixaButton{
     display: flex;
@@ -82,16 +82,16 @@ main h2{
     height: 40px;
     padding: 10px;
     margin: 10px;
-    background-color: rgb(5, 123, 202);
-    color: white;
+    background-color: var(--azulBotoes);
+    color: var(--brancoLetras);
     cursor: pointer;
 }
 .caixaButton input[type="button"]:hover{
-    background-color:yellow;
-    color: rgb(0, 0, 0);
+    background-color:var(--amareloHouver);
+    color: var(--pretoPrincipal);
 }
 :placeholder-shown{
-    color: gray;
+    color: var(--cinzaPlaceHolder);
 }
 .caixaCheck{
     width: 450px;

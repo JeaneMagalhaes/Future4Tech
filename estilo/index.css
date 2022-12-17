@@ -21,9 +21,9 @@ main{
     padding: 10px;
     margin: 10px;
     border-top-left-radius: 60px;
-    background-color: rgb(154, 213, 229);
+    background-color: var(--azulAnimacao);
     margin-bottom: 50px;
-    box-shadow: 5px 5px 15px -4px black;
+    box-shadow: 5px 5px 15px -4px var(--pretoPrincipal);
     
 }
 .saibaMaisInfo img{
@@ -54,8 +54,11 @@ main{
     width: 400px;
     height: 480px;
     border-top-left-radius: 60px;
-    background-color: rgb(154, 213, 229);
-    box-shadow: 5px 5px 15px -4px black;
+    background-color: var(--azulAnimacao);
+    box-shadow: 5px 5px 15px -4px var(--pretoPrincipal);
+}
+.disparadorImagens a{
+    color: var(--brancoLetras);
 }
 .carrossel{
     width: 350px;
@@ -116,12 +119,12 @@ main{
    padding: 10px 30px;
    margin-bottom: 50px;
    border-radius: 20px;
-   background-color: rgb(43, 131, 219);
+   background-color: var(--azulBotoes);
    transition: all 1s ease;
 }
 .disparadorImagens a:hover{
-    color: black;
-    background-color: gold;
+    color: var(--pretoPrincipal);
+    background-color: var(--amareloHouver);
  }
 .informacoes{
     margin: 0 auto;
@@ -129,10 +132,10 @@ main{
 }
 .saibaMaisInfo a{
     text-decoration: none;
-    color: rgb(247, 11, 11);
+    color: var(--vermelhoLinks);
     transition: 1s ease;
 }
 .saibaMaisInfo a:hover{
-    color: yellow;
+    color: var(--amareloHouver);
 }
 
