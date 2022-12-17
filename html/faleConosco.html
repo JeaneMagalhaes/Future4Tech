@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilo/headerFooter.css" />
+    <link rel="stylesheet" href="../estilo/faleConosco.css" />
     <title>Fale Conosco</title>
   </head>
   <body>
     <header>
       <div class="conteudo">
         <img
-          src="../imagens/headerFooter/logo.png" alt="Logo da empresa" class="logotipoMedio" />
+          src="../imagens/headerFooter/logo.png"
+          alt="Logo da empresa"
+          class="logotipoMedio"
+        />
         <nav>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -24,55 +27,101 @@
       </div>
     </header>
     <main>
-        <section id="formulario">
-          <h2>Fale conosco</h2>
-      <form action="">
-
+      <section id="formulario">
+        <h2>Fale conosco</h2>
+        <form action="">
           <div class="caixaTexto">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
+            <label for="nome" >Nome:</label>
+            <input type="text" id="nome"  placeholder=" Nome Completo"/>
           </div>
           <div class="caixaTexto">
-            <label for="email">Email:</label>
-            <input type="email" name="" id="email">
+            <label for="email">E-mail:</label>
+            <input type="email" name="" id="email" placeholder=" E-mail"/>
           </div>
           <div class="caixaTexto">
             <label for="telefone">Telefone</label>
-            <input type="tel" name="" id="telefone">
+            <input type="tel" name="" id="telefone" placeholder="Telefone"/>
           </div>
-         <div class="caixaTexto">
-          <label for="solucoes">Soluções</label>
-          <select name="" id="solucoes">
-            <option value="consultoria">Consultoria</option>
-            <option value="software">Software</option>
-            <option value="sistemaWeb">Sistema Web</option>
-            <option value="siteProfissional">Site Profissional</option>
-            <option value="softwareNuvem">Software em Nuvem</option>
-            <option value="aplicativosMobile">Aplicativos e sistemas Mobile</option>
-          </select>
-         </div>
+          <div class="caixaTexto">
+            <label for="solucoes">Soluções</label>
+            <select name="" id="solucoes">
+              <option value="consultoria">Consultoria</option>
+              <option value="software">Software</option>
+              <option value="sistemaWeb">Sistema Web</option>
+              <option value="siteProfissional">Site Profissional</option>
+              <option value="softwareNuvem">Software em Nuvem</option>
+              <option value="aplicativosMobile">
+                Aplicativos e sistemas Mobile
+              </option>
+            </select>
+          </div>
           <div class="caixaTexto">
             <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" cols="38" rows="10"></textarea>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="40"
+              rows="5"
+              placeholder=" Sua mensagem."
+            ></textarea>
           </div>
-          <div class="caixaBotao">
-            <input type="button" value="enviar">
+          <div class="caixaCheck">
+            <input type="checkbox" name="autorizacao" id="autorizacao" >
+            <p>Autorizo o tratamento de dados por meio da Lei Geral de Proteção de Dados  - nº 13.709. E declaro conciência da solicitação de revogação do consentimento a qualquer momento pelo email atendimento@future4tech.com</p>
           </div>
-      </form>
+          <div class="caixaButton">
+            <input type="button" value="Enviar" />
+          </div>
+        </form>
       </section>
-      <section id="localizacao">
-          <h2>Nossa Localização</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117003.06184956661!2d-46.759412575406216!3d-23.591932398634047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57475c3cdae3%3A0xbc1c37b046984e2e!2sAmazon%20Web%20Services!5e0!3m2!1sen!2sbr!4v1669679296696!5m2!1sen!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section id="informacoes">
+        <div id="enderecos">
+          <h2>Redes Sociais</h2>
+          <div class="redeSocial">
+            <a href=""
+              ><img class="imgConteudo" src="../imagens/headerFooter/linkedin.png" alt="linkedin"
+            /></a>
+            <a href=""
+              ><img class="imgConteudo" src="../imagens/headerFooter/whatsup.png" alt="Whats up"
+            /></a>
+            <a href=""
+              ><img class="imgConteudo" src="../imagens/headerFooter/instangran.png" alt="Instangran"
+            /></a>
+          </div>
+          <div id="separacao"></div>
+        </div>
+        <div id="localizacao">
+          <p>Endereço: Rua Waldemar Kost,255 - Hauer, Curitiba,PR, 81810-110.</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117003.06184956661!2d-46.759412575406216!3d-23.591932398634047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57475c3cdae3%3A0xbc1c37b046984e2e!2sAmazon%20Web%20Services!5e0!3m2!1sen!2sbr!4v1669679296696!5m2!1sen!2sbr"
+            width="300"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer>
       <div class="conteudo">
-        <img src="../imagens/headerFooter/logoRodape.png" alt="Logo de tecnologia em nuvens" class="logotipoPequeno" />
-        <h4>@ Future 4 Tech</h4>
+        <img
+          src="../imagens/headerFooter/logoRodape.png"
+          alt="Logo de tecnologia em nuvens"
+          class="logotipoPequeno"
+        />
+        <h4> &copy; Future 4 Tech</h4>
         <div class="redeSocial">
-          <a href=""><img src="../imagens/headerFooter/linkedin.png" alt="linkedin" /></a>
-          <a href=""><img src="../imagens/headerFooter/whatsup.png" alt="Whats up" /></a>
-          <a href=""><img src="../imagens/headerFooter/instangran.png" alt="Instangran" /></a>
+          <a href=""
+            ><img src="../imagens/headerFooter/linkedin.png" alt="linkedin"
+          /></a>
+          <a href=""
+            ><img src="../imagens/headerFooter/whatsup.png" alt="Whats up"
+          /></a>
+          <a href=""
+            ><img src="../imagens/headerFooter/instangran.png" alt="Instangran"
+          /></a>
         </div>
       </div>
     </footer>

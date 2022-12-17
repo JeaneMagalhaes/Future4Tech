@@ -16,8 +16,6 @@ main {
     min-height: 750px;
 }
 
-.imgLogoCab {}
-
 ul {
     display: flex;
     align-items: center;
@@ -40,9 +38,12 @@ a:hover {
     color: #ffd230;
 }
 
+details{
+    margin: 20px;
+    cursor: pointer;
+}
 .h1 {
     text-align: center;
-    text-decoration: underline auto;
     word-spacing: 0, 3px;
     font-size: 30px;
     margin-top: 15px;
