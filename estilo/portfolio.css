@@ -23,16 +23,15 @@ h1{
 .imgCont{
     width: 500px;
     border-radius: 20px;
-    border: 1px solid black;
+
 }
 
 .caixa{
-    border: 1px solid;
     padding: 30px;
     padding-left: 10px;
     border-radius: 50px;
     background-color: var(--azul-principal);
-    box-shadow: 6px 6px 6px #888;
+    box-shadow: 6px 6px 6px rgb(100, 100, 100);
 }
 
 .sep{
@@ -49,13 +48,11 @@ h1{
 
 .ancoraPrinc{
     text-decoration: none;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 7px;
+    border-radius: 20px;
+    padding: 15px 25px 15px 25px;
     background-color: #2d83f3;
     color: var(--branco-letras);
     margin-left: 12.5em;
-    font-weight: bold;
 }
 
 .ancoraPrinc:hover{
