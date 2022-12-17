@@ -1,0 +1,119 @@
+@import "headerFooter.css"; 
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #020301;
+
+}
+
+body {
+    background-image: linear-gradient(180deg, gray, white);
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 750px;
+}
+
+.imgLogoCab {}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.li {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #b7b6b6;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a:hover {
+    color: #ffd230;
+}
+
+.h1 {
+    text-align: center;
+    text-decoration: underline auto;
+    word-spacing: 0, 3px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.boX {
+    border: 1px solid rgba(97, 97, 97, 0.575);
+
+}
+
+.divSumary {
+    text-align: left;
+    word-spacing: 0, 2px;
+    font-size: 20px;
+    text-indent: 25px;
+    color: black;
+    line-height: 2.0;
+    border: 1px solid rgba(129, 126, 126, 0.575);
+
+}
+
+.divSumary:hover {
+    background-color: #dee0e4;
+}
+
+
+.pTextos {
+    font-size: 15px;
+
+}
+
+.divBloc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+}
+
+.imgServiços {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid black;
+  
+}
+
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9a9da1;
+    border-top: 1px solid black;
+
+
+}
+
+
+.imgRodape {
+    width: 40px;
+    height: 40px;
+}
+
+.imgLogoRod {
+    width: 80px;
+    margin: 10px;
+}
