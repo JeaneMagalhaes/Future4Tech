@@ -25,8 +25,8 @@ body{
 
 header{
     width: 100%;
-    background-color: black;
-    box-shadow: 5px 5px 15px -4px black;
+    background-color: var(--preto-principal);
+    box-shadow: 5px 5px 15px -4px var(--preto-principal);
 }
 
 .cabecalho{
@@ -46,18 +46,18 @@ header li{
 }
 a{
     text-decoration: none;
-    color: rgb(195, 194, 194);
+    color: var(--cinza-letra-cabecalho);
 
 }
 a:hover{
-    color: gold;
+    color: var(--amarelo-hover);
     transition: 1s ease;
 }
 
 .rodape{
-    color: rgb(173, 171, 171);
-    background-color: gray;
-    box-shadow: 5px -5px 15px -4px black;
+    color: var(--cinza-letra-cabecalho);
+    background-color: var(--cinza-principal);
+    box-shadow: 5px -5px 15px -4px var(--preto-principal);
 }
 
 .container{
