@@ -1,0 +1,47 @@
+@import "style.css"; 
+
+header{
+    width: 100%;
+    background-color: var(--pretoPrincipal);
+    box-shadow: 5px 5px 15px -4px var(--pretoPrincipal);
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li{
+    list-style: none;
+    padding: 20px; 
+}
+a{
+    text-decoration: none;
+    color: var(--cinzaLetra);
+
+}
+a:hover{
+    color: var(--amareloHouver);
+    transition: 1s ease;
+}
+footer{
+    width: 100%;
+    color: var(--cinzaLetra);
+    background-color: var(--cinzaPrincipal);
+    box-shadow: 5px -5px 15px -4px var(--pretoPrincipal);
+}
+.logotipoPequeno{
+    height: 80px;
+    margin: 10px;
+}
+footer img{
+    height: 40px;
+}
+
+.redeSocial img{
+    margin: 5px;
+    padding: 5px;
+}
+

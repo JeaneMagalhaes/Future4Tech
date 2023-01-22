@@ -1,0 +1,58 @@
+@media screen And (max-width:948px){
+    .logotipoMedio{
+        display: none;
+    }
+    .logoPrincipalPequeno{
+        display: block;
+        
+    }
+}
+
+@media screen And (max-width:768px){
+    .conteudo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logotipoMedio{
+        display: none;
+    }
+    .logoPrincipalPequeno{
+        display: block;
+        
+    }
+    #menuRetratil{
+        display: block;
+    }
+    
+    nav ul{
+    position: absolute;
+    border-end-start-radius: 10px;
+    top:110px;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;   
+    background-color: rgb(0, 0, 0,0.9); 
+    z-index: 3;
+    }
+    nav ul li{
+      margin: 10px 30px;
+    }
+    nav ul li a{
+        display: block;
+        padding: 10px;
+    }
+    @keyframes animacaoMenuON {
+        0%{right: -250px;}
+        100%{right: 0;}
+    }
+    @keyframes animacaoMenuOFF {
+        0%{right: 0;}
+        100%{right: -250px;}
+    }
+
+
+}
