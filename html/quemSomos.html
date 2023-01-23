@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../estilo/headerFooter.css" />
     <link rel="stylesheet" href="../estilo/quemSomos.css">
+    <link rel="stylesheet" href="../estilo/responsivo.css">
+    <script src="../scripts/menuLateral.js" defer></script>
     <title>Quem somos</title>
   </head>
   <body>
@@ -13,6 +15,8 @@
       <div class="conteudo">
         <img
           src="../imagens/headerFooter/logo.png" alt="Logo da empresa" class="logotipoMedio" />
+          <img
+          src="../imagens/headerFooter/logoPeq.png" alt="Logo da empresa" class="logoPrincipalPequeno" />
         <nav>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -22,6 +26,7 @@
             <li><a href="./faleConosco.html">Fale Conosco</a></li>
           </ul>
         </nav>
+        <input type="checkbox" name="menuRetratil" id="menuRetratil" onclick="abrirMenu()">
       </div>
     </header>
     <main>

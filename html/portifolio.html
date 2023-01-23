@@ -5,25 +5,30 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../estilo/headerFooter.css">
   <link rel="stylesheet" href="../estilo/portfolio.css">
   <link rel="stylesheet" href="../estilo/estilo.css">
+  <link rel="stylesheet" href="../estilo/responsivo.css">
+  <script src="../scripts/menuLateral.js" defer></script>
   <title>Portfólio</title>
 </head>
 
 <body>
   <header>
-    <div class="cabecalho">
-      <img src="../imagens/headerFooter/logo.png" alt="Logo da empresa" class="logotipoMedio" />
+    <div class="conteudo">
+      <img
+        src="../imagens/headerFooter/logo.png" alt="Logo da empresa" class="logotipoMedio" />
+        <img
+        src="../imagens/headerFooter/logoPeq.png" alt="Logo da empresa" class="logoPrincipalPequeno" />
       <nav>
-        <ul class="botaoNav">
-          <li><a href="../index.html" class="botaoLink">Inicio</a></li>
-          <li><a href="./solucoes.html" class="botaoLink">Soluções</a></li>
-          <li><a href="./portifolio.html" class="botaoLink">Portifólio</a></li>
-          <li><a href="./quemSomos.html" class="botaoLink">Quem Somos</a></li>
-          <li><a href="./faleConosco.html" class="botaoLink">Fale Conosco</a></li>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./solucoes.html">Soluções</a></li>
+          <li><a href="./portifolio.html">Portifólio</a></li>
+          <li><a href="./quemSomos.html">Quem Somos</a></li>
+          <li><a href="./faleConosco.html">Fale Conosco</a></li>
         </ul>
       </nav>
+      <input type="checkbox" name="menuRetratil" id="menuRetratil" onclick="abrirMenu()">
     </div>
   </header>
   <main>
@@ -53,17 +58,24 @@
     </section>
 
   </main>
-
-  <footer class="rodape">
-    <div class="container">
-      <img src="../imagens/headerFooter/logoRodape.png" alt="Logo de tecnologia em nuvens" class="logotipoPequeno" />
-      <div>
-        <p class="copyright">&copy; Future 4 Tech</p>
-      </div>
+  <footer>
+    <div class="conteudo">
+      <img
+        src="../imagens/headerFooter/logoRodape.png"
+        alt="Logo de tecnologia em nuvens"
+        class="logotipoPequeno"
+      />
+      <h4> &copy; Future 4 Tech</h4>
       <div class="redeSocial">
-        <a href=""><img src="../imagens/headerFooter/linkedin.png" alt="linkedin" class="imgRodape" /></a>
-        <a href=""><img src="../imagens/headerFooter/whatsup.png" alt="Whats up" class="imgRodape" /></a>
-        <a href=""><img src="../imagens/headerFooter/instangran.png" alt="Instangran" class="imgRodape" /></a>
+        <a href=""
+          ><img src="../imagens/headerFooter/linkedin.png" alt="linkedin"
+        /></a>
+        <a href=""
+          ><img src="../imagens/headerFooter/whatsup.png" alt="Whats up"
+        /></a>
+        <a href=""
+          ><img src="../imagens/headerFooter/instangran.png" alt="Instangran"
+        /></a>
       </div>
     </div>
   </footer>
