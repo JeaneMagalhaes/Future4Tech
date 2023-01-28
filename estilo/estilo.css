@@ -15,12 +15,7 @@ body{
     scroll-behavior: smooth;
 }
 
-  /*.cabecalho{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--preto-principal);
-}     */ 
+
 
 
 header{
@@ -78,38 +73,6 @@ footer img{
     padding: 5px;
 }
 
-/*.botaoNav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.botaoLink{
-    padding: 10px;
-    text-decoration: none;
-    color: var(--cinza-letra-cabecalho);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.botaoLink:hover{
-    color: var(--amarelo-hover);
-}*/
-
-/*.rodape{
-    background-color: var(--cinza-principal);
-    margin-top: 5em;
-    padding-top: 1em;
-    border-top: 1px solid var(--preto-principal);
-}
-.imgRodape{
-    width: 50px;
-}
-
-.logotipoPequeno{
-    width: 100px;
-}
-*/
 
 .copyright{
     font-weight: bold;
