@@ -14,7 +14,7 @@ function validarCampos(campolabel,caixa,ajuda,tipo,nomeCampo ){
              caixa.classList.add("caixaErrada");  
              ajuda.classList.add("mensagemAjuda");
         
-        }else if(quantidadeConteudoCaixa >= 1 && quantidadeConteudoCaixa <= 11){
+        }else if(quantidadeConteudoCaixa >= 1 && quantidadeConteudoCaixa <= 10){
             ajuda.innerHTML = "Campo necessita pelo menos 11 caracteres";
             campolabel.innerHTML= `* ${nomeCampo}`;
             caixa.classList.add("caixaErrada");  
@@ -60,8 +60,11 @@ function validarOption(select,selectLabel,ajuda,nomeCampo){
 
         }
         else{
+            ajuda.classList.remove("mensagemAjuda");
+            ajuda.innerHTML="";
             select.classList.remove("caixaErrada");
             select.classList.add("caixaCorreta");
+
         }
     })
 }
@@ -137,3 +140,28 @@ let telefoneCampo="Telefone";
 
 validarCampos(telefoneLabel,telefoneCaixa,telefoneAjuda,telefoneTipo,telefoneCampo); 
 
+
+
+let botaoSubmit = document.querySelector('.caixaButton');
+let checkAutorizacao = document.querySelector('#autorizacao');
+
+function acaoBotaoSubmit(){
+    botaoSubmit.addEventListener("click",()=>{
+        
+        if(!checkAutorizacao.checked){
+            alert("Necessario autoriazação de privacidade.");
+        }else if(nomeCaixa.className==="caixaErrada" || nomeCaixa.value==="" || emailCaixa.className==="caixaErrada" || emailCaixa.value==="" || telefoneCaixa.className==="caixaErrada" || telefoneCaixa.value==="" || select.className==="caixaErrada" || select.value === "emBranco" || areaTexto.value==="" ||areaTexto.className==="caixaErrada"){
+            alert("Verifique se todos os campos foram preenchidos corretamente.");
+        }else{
+            nomeCaixa.innerHTML="";
+            emailCaixa.innerHTML="";
+            telefoneCaixa.innerHTML="";
+            areaTexto.innerHTML="";
+            select.options[0].value;
+            alert("Informações enviadas com sucesso!  Entraremos em contato em breve.");
+        }
+    });
+   
+}
+
+acaoBotaoSubmit();

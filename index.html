@@ -18,14 +18,21 @@
           src="./imagens/headerFooter/logoPeq.png" alt="Logo da empresa" class="logoPrincipalPequeno" />
         <nav>
           <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./html/solucoes.html">Soluções</a></li>
-            <li><a href="./html/portifolio.html">Portifólio</a></li>
-            <li><a href="./html/quemSomos.html">Quem Somos</a></li>
-            <li><a href="./html/faleConosco.html">Fale Conosco</a></li>
+            <li><a href="javascript:fecharMenuRedirect('./index.html')">Home</a></li>
+            <li><a href="javascript:fecharMenuRedirect('./html/solucoes.html')">Soluções</a></li>
+            <li><a href="javascript:fecharMenuRedirect('./html/portifolio.html')">Portifólio</a></li>
+            <li><a href="javascript:fecharMenuRedirect('./html/quemSomos.html')">Quem Somos</a></li>
+            <li><a href="javascript:fecharMenuRedirect('./html/faleConosco.html')">Fale Conosco</a></li>
           </ul>
         </nav>
-        <input type="checkbox" name="menuRetratil" id="menuRetratil" onclick="abrirMenu()">
+        <div class="menuHamburguer">
+          <input type="checkbox" name="menuRetratil" id="menuRetratil" onclick="abrirMenu()">
+          <label for="menuRetratil" class="hamburguerLabel">
+            <span class="b1"></span>
+            <span class="b2"></span>
+            <span class="b3"></span>
+          </label>
+        </div>
       </div>
     </header>
     <main>
@@ -49,6 +56,7 @@
         </section>
       </div>
       <div class="saibaMais">
+
         <section class="saibaMaisInfo" id="topicoSaibaMais">
           <h1>Saiba Mais</h1>
           <img src="./imagens/conteudos/index/empresa.png" alt="">

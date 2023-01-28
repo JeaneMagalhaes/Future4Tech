@@ -9,6 +9,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     min-height: 850px;
 }
@@ -44,6 +45,7 @@ main{
 }
 .apresentacao img{
     width: 500px;
+    margin: 15px;
 }
 
 .disparadorImagens{
@@ -74,7 +76,7 @@ main{
 }
 .disparadorImagens{
     width: 400px;
-    margin: 30px;
+    margin: 15px;
 }
 
 .disparadorImagens ul{

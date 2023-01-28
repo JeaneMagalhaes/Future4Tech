@@ -21,14 +21,21 @@
         src="../imagens/headerFooter/logoPeq.png" alt="Logo da empresa" class="logoPrincipalPequeno" />
       <nav>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./solucoes.html">Soluções</a></li>
-          <li><a href="./portifolio.html">Portifólio</a></li>
-          <li><a href="./quemSomos.html">Quem Somos</a></li>
-          <li><a href="./faleConosco.html">Fale Conosco</a></li>
+          <li><a href="javascript:fecharMenuRedirect('../index.html')">Home</a></li>
+          <li><a href="javascript:fecharMenuRedirect('./solucoes.html')">Soluções</a></li>
+          <li><a href="javascript:fecharMenuRedirect('./portifolio.html')">Portifólio</a></li>
+          <li><a href="javascript:fecharMenuRedirect('./quemSomos.html')">Quem Somos</a></li>
+          <li><a href="javascript:fecharMenuRedirect('./faleConosco.html')">Fale Conosco</a></li>
         </ul>
       </nav>
-      <input type="checkbox" name="menuRetratil" id="menuRetratil" onclick="abrirMenu()">
+      <div class="menuHamburguer">
+        <input type="checkbox" name="menuRetratil" id="menuRetratil" onclick="abrirMenu()">
+        <label for="menuRetratil" class="hamburguerLabel">
+          <span class="b1"></span>
+          <span class="b2"></span>
+          <span class="b3"></span>
+        </label>
+      </div>
     </div>
   </header>
   <main>

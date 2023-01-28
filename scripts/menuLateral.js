@@ -10,3 +10,18 @@ function abrirMenu(){
         botaoMenu.checked=false;
     }
 }
+
+function fecharMenuRedirect(caminho){
+    if(botaoMenu.checked){
+        menuLateral.style.animation ="animacaoMenuOFF 1s ease-in-out 0s 1 normal forwards";
+        botaoMenu.checked=false;  
+        setTimeout(() => {
+            redirecionar(caminho);
+        }, 1000);
+    }else{
+        redirecionar(caminho);
+    }
+}
+function redirecionar(caminho){
+    window.location.href=caminho;
+}
