@@ -38,7 +38,7 @@
     position: absolute;
     border-end-start-radius: 10px;
     top:110px;
-    right: -250px;
+    right: -300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,12 +69,12 @@
         display: block;
     }
     @keyframes animacaoMenuON {
-        0%{right: -280px;}
+        0%{right: -300px;}
         100%{right: 0;}
     }
     @keyframes animacaoMenuOFF {
         0%{right: 0;}
-        100%{right: -280px;}
+        100%{right: -300px;}
     }
 
     /*Menu hamburguer*/
