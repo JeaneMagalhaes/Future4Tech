@@ -44,4 +44,8 @@ footer img{
     margin: 5px;
     padding: 5px;
 }
-
+#iconeMenu{
+    display: none;
+    color: white;
+   
+}

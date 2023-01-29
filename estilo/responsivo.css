@@ -47,6 +47,7 @@
     z-index: 3;
     }
     nav ul li{
+      display: block;
       margin: 0px 20px;
       margin-right: 50px;
     }
@@ -54,16 +55,26 @@
         margin-bottom: 50px;
     }
     nav ul li a{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         padding: 10px;
+        color: white;
+        gap: 10px;
+    }
+    nav ul li a:hover{
+        color: yellow;
+    }
+    #iconeMenu{
+        display: block;
     }
     @keyframes animacaoMenuON {
-        0%{right: -250px;}
+        0%{right: -280px;}
         100%{right: 0;}
     }
     @keyframes animacaoMenuOFF {
         0%{right: 0;}
-        100%{right: -250px;}
+        100%{right: -280px;}
     }
 
     /*Menu hamburguer*/
