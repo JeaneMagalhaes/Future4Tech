@@ -12,6 +12,7 @@ h2 {
     padding: 20px;
     text-align: justify;
     text-indent: 50px;
+    margin-bottom: 50px;
 }
 #edson h1, #daniel h1 {
     text-align:left
@@ -43,4 +44,7 @@ h2 {
     content: "";
     clear: both;
     display: table;
+}
+.perfil{
+    margin-bottom: 90px;
 }
