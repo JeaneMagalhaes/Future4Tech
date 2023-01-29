@@ -15,12 +15,6 @@ body{
     scroll-behavior: smooth;
 }
 
-  /*.cabecalho{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--preto-principal);
-}     */ 
 
 
 header{

@@ -8,9 +8,12 @@ h1{
 
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .tituloPrinc{
@@ -22,42 +25,47 @@ h1{
 }
 
 .imgCont{
-    width: 500px;
+    width: 300px;
     border-radius: 20px;
 
 }
 
 .caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     padding-left: 10px;
     border-radius: 50px;
-    background-color: var(--azul-principal);
+    background-color: var(--azulAnimacao);
     box-shadow: 6px 6px 6px rgb(100, 100, 100);
 }
 
+/*
 .sep{
-    margin-right: 15em;
+    margin-right: 10em;
 }
-
+*/
 
 .fraseCont{
-    font-size: 36px;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
-    margin-top: 5px;
+    margin: 10px;
     margin-bottom: 15px;
 }
 
 .ancoraPrinc{
     text-decoration: none;
     border-radius: 20px;
-    padding: 15px 25px 15px 25px;
+    padding: 10px 25px 10px 25px;
     background-color: #2d83f3;
     color: var(--branco-letras);
-    margin-left: 12.5em;
 }
 
 .ancoraPrinc:hover{
-    background-color: var(--amarelo-hover);
+    background-color: var(--amareloHouver);
     color: var(--preto-principal);
     font-weight: bold;
 }
