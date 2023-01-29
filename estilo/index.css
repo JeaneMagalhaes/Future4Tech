@@ -11,6 +11,7 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+
     min-height: 850px;
 }
 .saibaMaisInfo{
@@ -44,8 +45,9 @@ main{
     justify-content: center;
 }
 .apresentacao img{
-    width: 500px;
-    margin: 15px;
+    max-width: 500px;
+    min-width: 200px;
+    margin: 15px; 
 }
 
 .disparadorImagens{

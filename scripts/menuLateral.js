@@ -1,5 +1,6 @@
 let menuLateral = document.querySelector("nav > ul");
 let botaoMenu = document.getElementById("menuRetratil");
+let tamanhoTela = window.screen.width;
 
 function abrirMenu(){
     if(botaoMenu.checked){

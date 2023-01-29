@@ -17,11 +17,13 @@ function validarCampos(campolabel,caixa,ajuda,tipo,nomeCampo ){
         }else if(quantidadeConteudoCaixa >= 1 && quantidadeConteudoCaixa <= 10){
             ajuda.innerHTML = "Campo necessita pelo menos 11 caracteres";
             campolabel.innerHTML= `* ${nomeCampo}`;
+            campolabel.classList.add("textoErrado");
             caixa.classList.add("caixaErrada");  
             ajuda.classList.add("mensagemAjuda");
             
         }else{
              caixa.classList.remove("caixaErrada");
+             campolabel.classList.remove("textoErrado");
              ajuda.innerHTML = "";
              campolabel.innerHTML = nomeCampo;
              caixa.classList.add("caixaCorreta"); 
@@ -141,24 +143,82 @@ let telefoneCampo="Telefone";
 validarCampos(telefoneLabel,telefoneCaixa,telefoneAjuda,telefoneTipo,telefoneCampo); 
 
 
+//Poup Mansagem - Poup Personalizado
+
+let poupPersonalizado = document.getElementById("poupPersonalizado");
+let textoPoup = document.querySelector(".explicacao");
+let botaoPoup = document.querySelector(".ok");
+
+
+function abrirPoup(mensagem){
+    poupPersonalizado.style.display="block";
+    textoPoup.innerHTML = mensagem;
+}
+
+function fecharPoup(){
+    botaoPoup.addEventListener("click",()=>{
+         poupPersonalizado.style.animation = "animacaoPoupOff  0.6s linear forwards";
+         setTimeout(() => {
+            poupPersonalizado.style.animation = "";
+            poupPersonalizado.style.display="none";
+        }, 600);
+         
+    });
+}
+fecharPoup();
+
 
 let botaoSubmit = document.querySelector('.caixaButton');
 let checkAutorizacao = document.querySelector('#autorizacao');
+
+let iconExclamacao = document.querySelector('#iconExclamacao');
+let iconError = document.querySelector('#iconError');
+let iconCorrect= document.querySelector('#iconCorrect');
+
+//Botão de formulario
 
 function acaoBotaoSubmit(){
     botaoSubmit.addEventListener("click",()=>{
         
         if(!checkAutorizacao.checked){
-            alert("Necessario autoriazação de privacidade.");
-        }else if(nomeCaixa.className==="caixaErrada" || nomeCaixa.value==="" || emailCaixa.className==="caixaErrada" || emailCaixa.value==="" || telefoneCaixa.className==="caixaErrada" || telefoneCaixa.value==="" || select.className==="caixaErrada" || select.value === "emBranco" || areaTexto.value==="" ||areaTexto.className==="caixaErrada"){
-            alert("Verifique se todos os campos foram preenchidos corretamente.");
-        }else{
-            nomeCaixa.innerHTML="";
-            emailCaixa.innerHTML="";
-            telefoneCaixa.innerHTML="";
-            areaTexto.innerHTML="";
+            iconCorrect.style.display="none";
+            iconError.style.display="none";
+            iconExclamacao.style.display="block";
+
+            abrirPoup("Necessário preencher autorização de privacidade.");
+
+        }else if(nomeCaixa.value==="" || emailCaixa.value==="" || telefoneCaixa.value===""  || select.value === "emBranco" || areaTexto.value==="" ){
+            iconCorrect.style.display="none";
+            iconError.style.display="none";
+            iconExclamacao.style.display="block";
+
+            abrirPoup("Verifique se todos os campos foram preenchidos.");
+        
+        }else if(nomeCaixa.classList.contains("caixaErrada") || emailCaixa.classList.contains("caixaErrada") || telefoneCaixa.classList.contains("caixaErrada") || select.classList.contains("caixaErrada") ||areaTexto.classList.contains("caixaErrada")){
+            iconCorrect.style.display="none";
+            iconError.style.display="block";
+            iconExclamacao.style.display="none";
+
+            abrirPoup("Verifique se todos os campos foram preenchidos corretamente.");
+        }
+        else{
+            iconCorrect.style.display="block";
+            iconError.style.display="none";
+            iconExclamacao.style.display="none";
+
+            nomeCaixa.value="";
+            emailCaixa.value="";
+            telefoneCaixa.value="";
+            areaTexto.value="";
             select.options[0].value;
-            alert("Informações enviadas com sucesso!  Entraremos em contato em breve.");
+
+            nomeCaixa.classList.remove("caixaCorreta");
+            emailCaixa.classList.remove("caixaCorreta");
+            telefoneCaixa.classList.remove("caixaCorreta");
+            areaTexto.classList.remove("caixaCorreta");
+            select.classList.remove("caixaCorreta");
+
+            abrirPoup("Informações enviadas com sucesso!  Entraremos em contato em breve.");
         }
     });
    
