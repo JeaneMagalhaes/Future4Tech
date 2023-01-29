@@ -4,17 +4,17 @@ let tamanhoTela = window.screen.width;
 
 function abrirMenu(){
     if(botaoMenu.checked){
-        menuLateral.style.animation ="animacaoMenuON 1s ease-in-out 0s 1 normal forwards";
+        menuLateral.style.animation ="animacaoMenuON 1s linear forwards";
         
     }else{
-        menuLateral.style.animation ="animacaoMenuOFF 1s ease-in-out 0s 1 normal forwards";
+        menuLateral.style.animation ="animacaoMenuOFF 1s linear forwards";
         botaoMenu.checked=false;
     }
 }
 
 function fecharMenuRedirect(caminho){
     if(botaoMenu.checked){
-        menuLateral.style.animation ="animacaoMenuOFF 1s ease-in-out 0s 1 normal forwards";
+        menuLateral.style.animation ="animacaoMenuOFF 1s linear forwards";
         botaoMenu.checked=false;  
         setTimeout(() => {
             redirecionar(caminho);

@@ -7,8 +7,16 @@
         
     }
 }
+@media screen And (max-width:850px){
+    #informacoes{
+        min-width: 500px;
+    }
+    #enderecos{
+        display: none;
+    }
+}
 
-@media screen And (max-width:768px){
+@media screen And (max-width:748px){
     .conteudo{
         display: flex;
         flex-direction: row;
@@ -49,8 +57,6 @@
         display: block;
         padding: 10px;
     }
-
-    
     @keyframes animacaoMenuON {
         0%{right: -250px;}
         100%{right: 0;}
