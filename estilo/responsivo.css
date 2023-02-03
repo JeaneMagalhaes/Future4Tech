@@ -1,4 +1,4 @@
-@media screen And (max-width:948px){
+@media screen And (max-width:975px){
     .logotipoMedio{
         display: none;
     }
@@ -16,7 +16,7 @@
     }
 }
 
-@media screen And (max-width:748px){
+@media screen And (max-width:824px){
     .conteudo{
         display: flex;
         flex-direction: row;
