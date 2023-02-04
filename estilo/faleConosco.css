@@ -1,50 +1,34 @@
 @import "headerFooter.css";
 main{
-    width: 100%;
+    width: 50%;
     min-height: 700px;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: baseline;
 }
 main h2{
     padding: 10px;
     margin: 10px;
 }
 #formulario{
-    width: 60%;
-    min-width: 500px;
+    width: 50%;
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items:center;
-    margin-bottom: 30px;
-}
-form{
-    width: 90%;
-    padding: 10px;
-    
+   /* background-color: aliceblue;*/
 }
 #informacoes{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items:center;
-    margin-bottom: 50px;
-}
-#enderecos{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #separacao{
     height: 6px;
-    width: 100%;
     background-color:var(--cinzaSeparacao);
 }
 .caixaTexto{
@@ -63,10 +47,7 @@ form{
     align-items: center;
 }
 #localizacao p{
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-   /* margin:  25px 80px 25px 80px;*/
+    margin:  25px 80px 25px 80px;
 }
 .caixaTexto{
     width: 100%;
@@ -76,19 +57,17 @@ form{
     width: 100%;
     border-radius: 10px;
     border: none;
-    /*background-color: var(--cinzaFormulario);*/
+    background-color: var(--cinzaFormulario);
 }
 .caixaTexto input, .caixaTexto select,.caixaTexto textarea,.caixaButton input{
     width: 100%;
     border-radius: 10px;
     border: none;
-   /* background-color: var(--cinzaFormulario);*/
+    background-color: var(--cinzaFormulario);
 }
-/*
 .caixaTexto input:focus-visible, .caixaTexto select:focus-visible,.caixaTexto textarea:focus-visible{
     background-color: var(--brancoLetras);
 }
-*/
 .caixaButton{
     display: flex;
     flex-direction: row;
@@ -127,6 +106,5 @@ form{
     margin: 10px;
     padding: 10px;
 }
-
 
 
