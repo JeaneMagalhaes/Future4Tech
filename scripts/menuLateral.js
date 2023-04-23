@@ -2,27 +2,45 @@ let menuLateral = document.querySelector("nav > ul");
 let botaoMenu = document.getElementById("menuRetratil");
 let tamanhoTela = window.screen.width;
 
+function menuOpen(){
+    menuLateral.style.width="300px";
+    menuLateral.style.transition = "all 0.75s ease";
+}
+
+function menuClose(){
+    menuLateral.style.width="0px";
+    menuLateral.style.transition = "all 0.75s ease";
+    if(tamanhoTela >= 824){
+        menuLateral.style.width="";
+    }
+
+}
+
+function redirecionar(caminho){
+    window.location.href=caminho;
+}
+
+
 function abrirMenu(){
     if(botaoMenu.checked){
-        menuLateral.style.animation ="animacaoMenuON 1s linear forwards";
+        menuOpen();
         
     }else{
-        menuLateral.style.animation ="animacaoMenuOFF 1s linear forwards";
+        menuClose();
         botaoMenu.checked=false;
     }
 }
 
 function fecharMenuRedirect(caminho){
     if(botaoMenu.checked){
-        menuLateral.style.animation ="animacaoMenuOFF 1s linear forwards";
-        botaoMenu.checked=false;  
+        menuClose();
+        botaoMenu.checked=false;
+
         setTimeout(() => {
             redirecionar(caminho);
-        }, 1000);
+        }, 750);
     }else{
         redirecionar(caminho);
     }
 }
-function redirecionar(caminho){
-    window.location.href=caminho;
-}
+

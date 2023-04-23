@@ -14,13 +14,22 @@ header ul{
 }
 
 header li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
     list-style: none;
     padding: 12px; 
+}
+
+.liRedesSocialMenu{
+    display: none;
 }
 a{
     text-decoration: none;
     color: var(--cinzaLetra);
-
+    white-space: nowrap;
 }
 a:hover{
     color: var(--amareloHouver);
@@ -48,4 +57,7 @@ footer img{
     display: none;
     color: white;
    
+}
+.leiFooter {
+    font-weight: 900;
 }

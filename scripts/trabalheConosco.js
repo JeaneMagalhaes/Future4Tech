@@ -86,6 +86,9 @@ anexarArquivoEnvio.addEventListener("click",()=>{
 function validarAnexar() {
     let fileInput = document.getElementById("anexarCur");
     let filePath = fileInput.value;
+    let labelFilePath = document.querySelector('.pathArquivo');
+    let pathTexto ;
+    let pathTextoApresentar;
 
     let uploadExtensions = /(\.pdf|\.docx)$/i;
     
@@ -93,10 +96,16 @@ function validarAnexar() {
     if (!uploadExtensions.exec(filePath)) {
         fileInput.value = '';
         arquivoInvalido = true;
+
+        pathTexto = "Nenhum arquivo Selecionado";
+        labelFilePath.innerHTML = pathTexto ;
         anexarHelper.innerHTML="arquivo Invalido" ;
         anexarHelper.classList.add("mensagemAjuda");
         
     }else{
+        pathTexto = fileInput.value;
+        pathTextoApresentar =  pathTexto.substring(pathTexto.lastIndexOf("\\")+1);
+        labelFilePath.innerHTML = pathTextoApresentar;
         anexarHelper.classList.remove("mensagemAjuda");
         anexarHelper.innerHTML="" ;
         arquivoInvalido = false;
@@ -104,11 +113,9 @@ function validarAnexar() {
 
 }
 function limparAnexar(){
-    let fileInput = document.getElementById("anexarCur");
-    let filePath = "";
-    let uploadExtensions = /(\.pdf|\.docx)$/i;
+    let labelFilePath = document.querySelector('.pathArquivo');
+    labelFilePath.innerHTML="";
 }
-
 
 //Validar campo select
 let select = document.getElementById("areaInter");
@@ -244,6 +251,7 @@ function acaoBotaoSubmit() {
             whatsappCaixa.classList.remove("caixaCorreta");
             select.classList.remove("caixaCorreta");
 
+            limparAnexar();
             abrirPoup("Informações enviadas com sucesso!  Entraremos em contato em breve.");
         }
     });

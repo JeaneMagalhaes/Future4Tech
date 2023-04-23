@@ -1,34 +1,53 @@
 @import "headerFooter.css";
 main{
-    width: 50%;
+    width: 100%;
     min-height: 700px;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 main h2{
     padding: 10px;
     margin: 10px;
 }
 #formulario{
-    width: 50%;
+    width: 60%;
+    min-width: 350px;
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items:center;
-   /* background-color: aliceblue;*/
+    margin-bottom: 30px;
+}
+form{
+    width: 90%;
+    padding: 10px;
+    
 }
 #informacoes{
-    width: 50%;
+    width: 40%;
+    min-width: 350px;
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items:center;
+    margin-bottom: 50px;
+}
+#enderecos{
+    width: 90%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 #separacao{
     height: 6px;
+    width: 100%;
     background-color:var(--cinzaSeparacao);
 }
 .caixaTexto{
@@ -41,13 +60,20 @@ main h2{
     width: 50px;
 }
 #localizacao{
+    width: 60%;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #localizacao p{
-    margin:  25px 80px 25px 80px;
+    width: 90%;
+    min-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+   /* margin:  25px 80px 25px 80px;*/
 }
 .caixaTexto{
     width: 100%;
@@ -57,17 +83,19 @@ main h2{
     width: 100%;
     border-radius: 10px;
     border: none;
-    background-color: var(--cinzaFormulario);
+    /*background-color: var(--cinzaFormulario);*/
 }
 .caixaTexto input, .caixaTexto select,.caixaTexto textarea,.caixaButton input{
     width: 100%;
     border-radius: 10px;
     border: none;
-    background-color: var(--cinzaFormulario);
+   /* background-color: var(--cinzaFormulario);*/
 }
+/*
 .caixaTexto input:focus-visible, .caixaTexto select:focus-visible,.caixaTexto textarea:focus-visible{
     background-color: var(--brancoLetras);
 }
+*/
 .caixaButton{
     display: flex;
     flex-direction: row;
@@ -94,7 +122,7 @@ main h2{
     color: var(--cinzaPlaceHolder);
 }
 .caixaCheck{
-    width: 450px;
+    min-width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: baseline;
@@ -103,8 +131,13 @@ main h2{
     padding: 10px;
 }
 .caixaCheck input{
-    margin: 10px;
-    padding: 10px;
+    margin: 10px;   
 }
+iframe{
+    width: 80%;
+    min-width:350px;
+    margin: 0 auto;
+}
+
 
 

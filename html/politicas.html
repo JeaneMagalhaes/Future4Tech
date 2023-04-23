@@ -6,14 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trabalhe Conosco</title>
-  <link rel="stylesheet" href="../estilo/trabalheConosco.css">
-  <link rel="stylesheet" href="../estilo/mensagem.css">
+  <link rel="stylesheet" href="../estilo/politicasPagina.css">
+  <link rel="stylesheet" href="../estilo/politicasTermos.css">
   <link rel="stylesheet" href="../estilo/responsivo.css">
-  <link rel="stylesheet" href="../estilo/termos.css">
-  <script src="../scripts/trabalheConosco.js" defer></script>
   <script src="../scripts/menuLateral.js" defer></script>
-  <script src="../scripts/termos.js" defer></script>
-
+  <script src="../scripts/politicas.js" defer></script>
 </head>
 
 <body>
@@ -104,119 +101,85 @@
           <span class="b2"></span>
           <span class="b3"></span>
         </label>
-      </div>
-    </div>
-  </header>
+    </header>
   <main>
-    <div class="termos">
+    <section>
+    <div id="termos" class="termos">
       <div class="conteiner">
         <img src="../imagens/caixaMensagem/logo de fundo 2.png" alt="">
         <embed src="../pdf/termos/Política de Privacidade - Future4Tech.pdf" type="application/pdf" width="95%" height="70%">
         <div class="fecharTermos">
-          <input type="button" class="btnTermos" id="btnFecharAceitar" value="Fechar e aceitar os termos.">
-          <button class="btnTermos" id="btnFechar">Fechar</button>
+         <button class="btnTermos" id="btnFechar">Fechar</button>
         </div>
       </div>
     </div>
-    <div class="poupMensagem" id="poupPersonalizado">
-      <div class="poupConteiner">
-        <img src="../imagens/conteudos/faleConosco/logo de fundo 2.png" alt="">
-        <div class="textoExplicativo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="iconExclamacao" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
-              <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="iconError" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="iconCorrect" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-              <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
-            </svg>
-          <p class="explicacao">Texto Basico de explicação</p>
-        </div>
-        <button class="ok">Entendi</button>
-      </div>
-    </div>
-    <section class="formulario2">
-      <h2 class="trabConosco">Trabalhe Conosco</h2>
-      <form action="">
-        <div class="caixaTexto">
-          <label for="nome" class="nomeLabel">Nome Completo:</label>
-          <input type="text" id="nome" placeholder=" Nome Completo" />
-          <p class="nomeHelper"></p>
-        </div>
-        <div class="caixaTexto">
-          <label for="email" class="emailLabel">E-mail:</label>
-          <input type="email" name="" id="email" placeholder=" E-mail" />
-          <p class="emailHelper"></p>
-        </div>
-        <div class="caixaTexto">
-          <label for="telefone" class="telefoneLabel">Telefone:</label>
-          <input type="tel" name="" id="telefone" placeholder="Telefone" />
-          <p class="telHelper"></p>
-        </div>
-        <div class="caixaTexto">
-          <label for="whatsapp" class="whatsappLabel">Whatsapp:</label>
-          <input type="tel" name="" id="whatsapp" placeholder="Whatsapp" />
-          <p class="whatsHelper"></p>
-
-        </div>
-        <div class="caixaTexto">
-          <label for="areaInter" class="areaInter">Área de Interesse</label>
-          <select name="" id="areaInter">
-            <option value="emBranco">Selecione a opção</option>
-            <option value="comercial">Comercial</option>
-            <option value="administrativa">Administrativa</option>
-            <option value="tecnica">Técnica</option>
-            <option value="gerencial">Gerencial</option>
-            <option value="diretoria">Diretoria</option>
-          </select>
-          <p class="selectHelper"></p>
-        </div>
-        <div class="caixaTextoFile">
-          <div class="infoFile">
-              <label for="anexarCur" id="labelFile">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf-fill" viewBox="0 0 16 16">
-                  <path d="M5.523 10.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.035 21.035 0 0 0 .5-1.05 11.96 11.96 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.888 3.888 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 4.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
-                  <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm.165 11.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.64 11.64 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.707 19.707 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
-                </svg>
-                Anexar Currículo
-              </label>
-              <input type="file" name="anexarCur" id="anexarCur" onchange="validarAnexar()">
-              <p class="pathArquivo">Anexar arquivo word ou PDF.</p>
+  </section>
+  <section>
+        <div id= "pdfReembolso" class="reembolso">
+          <div class="conteiner">
+            <img src="../imagens/caixaMensagem/logo de fundo 2.png" alt="">
+            <embed src="../pdf/termos/POLÍTICA DE REEMBOLSO — Future4Tech.pdf" type="application/pdf" width="95%" height="70%">
+            <div class="fecharTermosReembolso">
+             <input class="btnReembolso" id="btnfecharReembolso" type="button" value="Fechar">
+             
             </div>
           </div>
-          <p class="anexarHelper"></p>
         </div>
-        <div class="caixaCheck">
-          <input type="checkbox" name="autorizacao" id="autorizacao">
-          <input type="button" class="btnVerTermos" value="Autorizo o tratamento de dados -nº 13.709.">
-        
-        </div>
-        <div class="caixaButton">
-          <input type="button" value="Enviar" />
-          <p class="ajudaEnvio"></p>
-
-        </div>
-      </form>
+      </section>
+      <section>
+            <div id="pdfuso" class="uso">
+              <div class="conteiner">
+                <img src="../imagens/caixaMensagem/logo de fundo 2.png" alt="">
+                <embed src="../pdf/termos/TERMOS DE USO — Future4Tech.pdf" type="application/pdf" width="95%" height="70%">
+                <div class="fecharTermosUso">
+                 <input class="btnUso" id="btnfecharUso" type="button" value="Fechar">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+          <div class="conteudoPrincipal">
+            <section class="temadaPagina">
+                <h2>Termos e Políticas</h2>
+                <p>Aqui na Future4Tech se preocupamos com toda a sua experiência como usuário e prezamos por uma comunicação clara e transparente. Esta página é reservada para este fim: os termos abaixo regerão toda a sua experiência seja como visitante, cliente, fornecedor e/ou parceiro. Por isso acreditamos que seja importante que você tenha ciência e os compreenda.</p>
+                <div id="textoPrivacidade" class="politicaPrivacidade">
+            </section>
+            <section class="termosePolitica">
+                  <h1>Política de Privacidade:</h1>
+                  <p>A Política de Privacidade é um termo previsto pela <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" class="lei">Lei Geral de Proteção de Dados nº13.709.</a> É um documento criado especialmente para garantir que os visitantes conheçam as regras de coleta, retenção e compartilhamento de seus dados pessoais. Assegurando os direitos fundamentais de liberdade e privacidade dos usuários, e garantindo transparência em relação à utilização de dados pessoais compartilhados. </p>
+                  </div>              
+            </section>
+            <section>
+            <div id="buttonPrivacidade" class="caixaButton">
+            <input type="button" class="btnVerTermos" value="Acessar Política">
+            </section>
+            <section class="termosePolitica">
+            <div id="textoReembolso" class="politicaReembolso">
+              <h1>Política de Reembolso:</h1>
+              <p>A política de reembolso é um termo previsto pelo <a href="https://www.planalto.gov.br/ccivil_03/Leis/L8078compilado.htm" class="lei">artigo 49 do Código de Defesa do Consumidor</a> e obrigatório pelo Decreto Nº 7.962 da Lei do E-commerce. O documento visa informar aos clientes como solicitar a devolução de um produto ou serviço adquirido adquirido pelo site, bem como estipular os procedimentos de reembolso de valores que a empresa seguirá.</p>
+            </div>
+          </section>
+          <section>
+          <div id="buttonReembolso" class="caixaButton">
+            <input type="button" class="btnVerReembolso" value="Acessar Política">
+            </section>
+            <section class="termosePolitica">
+            <div id="textoUso" class="termodeUso">
+              <h1>Termo de Uso:</h1>
+              <p>Um contrato de Termos de Uso descreve as regras e condições que os visitantes devem aceitar para conseguirem usar o site e seus serviços, incluindo normas de cobrança e de direitos autorais. Além de incluir  os direitos e responsabilidades dos visitantes.</p>
+            </div>
+            </section>
+            <section>
+            <div id="buttonUso" class="caixaButton">
+            <input type="button" class="btnVerUso" value="Acessar Termo">
+          </section>
+          <section>
+          <div id="contato" class="contato">
+            <h1>Contato:</h1>
+            <p>Caso pretenda exercer qualquer um dos direitos previstos, inclusive retirar o seu consentimento, ou resolver quaisquer dúvidas, favor contatar nossa equipe <a href="mailto:atendimento@future4tech.com?subject=Questions" title="email" class="lei">através do email.</a></div>
+          </section>
     </section>
   </main>
-
-  <a href="https://api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui" target="_blank"
-      style="position:fixed;bottom:70px;right:50px;">
-      <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
-        xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
-          fill="#4CAF50" />
-        <path
-          d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 
-          16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 
-          7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 
-          11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
-          fill="#FAFAFA" />
-      </svg>
-    </a>
-
 </body>
 <footer>
   <div class="conteudo">
@@ -230,5 +193,4 @@
     </div>
   </div>
 </footer>
-
 </html>
